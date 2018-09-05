@@ -17,9 +17,9 @@ public class Calendar {
 		Scanner sc = new Scanner(System.in);
 		int monthNum = sc.nextInt();
 
-		int[] month = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-		System.out.println(monthNum + "월은 " + month[monthNum+1] + "일까지 있습니다.");
-		
+		int[] month = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+		System.out.println(monthNum + "월은 " + month[monthNum - 1] + "일까지 있습니다.");
+
 		sc.close();
 	}
 }
