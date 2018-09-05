@@ -1,5 +1,7 @@
 package calendar;
 
+import java.util.Scanner;
+
 public class Calendar {
 
 	public static void main(String[] args) {
@@ -10,6 +12,14 @@ public class Calendar {
 		System.out.println("15 16 17 18 19 20 21");
 		System.out.println("22 23 24 25 26 27 28");
 
-	}
+		// 숫자를 입력받아 해당하는 달의 최대 일수를 출력하는 프로그램
+		System.out.println("달을 입력하세요.");
+		Scanner sc = new Scanner(System.in);
+		int monthNum = sc.nextInt();
 
+		int[] month = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+		System.out.println(monthNum + "월은 " + month[monthNum+1] + "일까지 있습니다.");
+		
+		sc.close();
+	}
 }
